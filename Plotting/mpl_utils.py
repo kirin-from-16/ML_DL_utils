@@ -34,3 +34,4 @@ if __name__=='__main__':
     res_path = '/home/anhho/data/TrGiang_Workspace/Diffusion_models/syn10-diffusion/experiments/inpainting/demo_requests/parcel/reso_05/results/results/740_beta2_0/'
 
     print_results(img_path, mask_path, res_path, 'npy')
+    # what the fuck
