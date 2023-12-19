@@ -14,7 +14,7 @@ def print_results(img_path, mask_path, result_path, ext):
     num_img = 10
     _, axs = plt.subplots(num_img, 3, sharex=True, sharey=True , figsize = (10,4*num_img))
     
-    for i, img_file in enumerate(glob.glob(result_path+f'*.{ext}')):
+    for i, img_file in enumerate(glob.glob(result_path+f'/*.{ext}')):
 
         img = np.load(os.path.join(img_path, os.path.basename(img_file))).transpose(1,2,0)
         mask = np.load(os.path.join(mask_path, os.path.basename(img_file)))
